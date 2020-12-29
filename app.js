@@ -16,6 +16,17 @@ class Person {
 
 
 
-const alex = new Person(`Alex`, 27, false);
+class SuperHuman extends Person {
+  fly(){
+    console.log(`Hi guys, I'm ${ this.name } and I can fly.`);
+  }
+}
 
-alex.speak()
+
+
+const alex = new Person(`Alex`, 27, false);
+const genos = new SuperHuman(`Genos`, 19, false);
+alex.speak();
+genos.fly();
+
+
