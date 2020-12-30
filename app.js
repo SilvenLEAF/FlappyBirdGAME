@@ -1,3 +1,25 @@
+/* 
+  CLASS Based Object Oriented Programming
+  
+  class NAME {
+    constructor (a,b,c){ this.a = a; }
+
+    x(){ this.b }
+    y(){ this.c }
+  }
+
+
+
+  class INHERITANCE extends NAME {
+    constructor (a,b,c,d,e) { super(a,b,c,d,e); this.d = d; }
+
+    z(){ this.a }
+  }
+*/
+
+
+
+
 class Person {
   constructor(name, age, isFemale){
     this.name = name;
