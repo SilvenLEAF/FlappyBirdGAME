@@ -10,6 +10,7 @@ const mySet2 = new Set([3,5,6,6,3,4,2,6,5,]);
   has(x) -------boolean
 */
 
+console.log('-----------------SET-----------------');
 console.log(mySet1);
 console.log(mySet2);
 
@@ -26,13 +27,16 @@ const myMap = new Map();
   clear ------returns undefined
 */
 
-
+console.log('-----------------MAP-----------------');
 console.log(myMap.set(4, 'number'));
 console.log(myMap.set(false, 'boolean'));
+
 console.log(myMap.has(4));
 console.log(myMap.has('boolean'));
+
 console.log(myMap.get(false));
 console.log(myMap.size);
+
 console.log(myMap);
 console.log(myMap.clear());
 console.log(myMap);
