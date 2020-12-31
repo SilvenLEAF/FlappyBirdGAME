@@ -18,12 +18,20 @@ console.log(mySet2);
 // Playing with MAP
 const myMap = new Map();
 
+/*
+  set ------returns the map
+  get ------returns the value
+  has ------returns boolean
+  size ------length
+  clear ------returns undefined
+*/
+
+
 console.log(myMap.set(4, 'number'));
 console.log(myMap.set(false, 'boolean'));
 console.log(myMap.has(4));
 console.log(myMap.has('boolean'));
 console.log(myMap.get(false));
-console.log(myMap.keys(['a', 'b', 'c', 'd', 'e']));
 console.log(myMap.size);
 console.log(myMap);
 console.log(myMap.clear());
