@@ -55,14 +55,40 @@ const myDate = new Date();
 
 
 console.log(`-------------------DATE`)
-console.log(myDate.getFullYear());
-console.log(myDate.getMonth());
-console.log(myDate.getDay());
-console.log(myDate.getDate());
+const year = myDate.getFullYear();
+const month = myDate.getMonth();
+const date = myDate.getDate();
+const weekday = myDate.getDay();
 
-console.log(myDate.getUTCFullYear());
-console.log(myDate.getUTCDate())
+console.log({ year, month, date, weekday });
 
 
-console.log(myDate.getHours())
-console.log(myDate.getUTCHours())
+
+const hours = myDate.getHours();
+const mins = myDate.getMinutes();
+const seconds = myDate.getSeconds();
+const milSecs = myDate.getMilliseconds();
+
+console.log({ hours, mins, seconds, milSecs });
+
+
+
+const timeZoneOffset = myDate.getTimezoneOffset();
+console.log({ timeZoneOffset });
+
+
+
+
+const string = myDate.toString();
+const dateString = myDate.toDateString();
+const timeString = myDate.toTimeString();
+
+console.log({ string, dateString, timeString });
+
+
+
+const localeString = myDate.toLocaleString()
+const localeDateString = myDate.toLocaleDateString()
+const localeTimeString = myDate.toLocaleTimeString()
+
+console.log({ localeString, localeDateString, localeTimeString })
