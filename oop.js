@@ -15,13 +15,30 @@ Person.prototype.say = function(){
 
 
 
+/*
+  function J(a,b,c){
+    this.a = a;
+  }
+
+  J.protype.x = function(){ this.b };
+
+
+  function K(...args){
+    J.apply(this, args)
+  };
+  K.prototype = Object.create(J.prototype);
+*/
 // INHERITANCE
-function SuperHuman(...args){
-  Person.apply(this, args);
+function SuperHuman(name, age, isFemale, skill){
+  Person.apply(this, [name, age, isFemale,]);
+  
+  this.skill = skill;
 }
 
 SuperHuman.prototype = Object.create(Person.prototype);
-
+SuperHuman.prototype.superpower = function(){
+  console.log(`I HERO ${ this.name } and I can ${ this.skill}.`);
+}
 
 
 
@@ -31,6 +48,7 @@ console.log(alex);
 alex.say();
 
 
-const fire = new SuperHuman('Fire', 25, true);
+const fire = new SuperHuman('Fire', 25, true, 'fly');
 console.log(fire);
-fire.say()
+fire.say();
+fire.superpower();
