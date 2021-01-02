@@ -13,6 +13,24 @@ Person.prototype.say = function(){
 }
 
 
+
+
+// INHERITANCE
+function SuperHuman(...args){
+  Person.apply(this, args);
+}
+
+SuperHuman.prototype = Object.create(Person.prototype);
+
+
+
+
+
 const alex = new Person('Alex', 27, false);
 console.log(alex);
 alex.say();
+
+
+const fire = new SuperHuman('Fire', 25, true);
+console.log(fire);
+fire.say()
