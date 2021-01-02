@@ -1,4 +1,31 @@
 // ES5 VERSION OOP
+
+
+/*
+  function J(a,b,c){
+    this.a = a;
+  }
+
+  J.protype.x = function(){ this.b };
+
+
+.          ___INHERITANCE___
+  function K(a,b,c,d,e){
+    J.apply(this, [a,b,c])
+    this.d = d;
+    this.e = e;
+  };
+
+  K.prototype = Object.create(J.prototype);
+  K.prototype.y = function(){ this.e }
+*/
+
+
+
+
+
+
+
 function Person (name, age, isFemale){
   this.name = name;
   this.age = age;
@@ -15,19 +42,7 @@ Person.prototype.say = function(){
 
 
 
-/*
-  function J(a,b,c){
-    this.a = a;
-  }
 
-  J.protype.x = function(){ this.b };
-
-
-  function K(...args){
-    J.apply(this, args)
-  };
-  K.prototype = Object.create(J.prototype);
-*/
 // INHERITANCE
 function SuperHuman(name, age, isFemale, skill){
   Person.apply(this, [name, age, isFemale,]);
