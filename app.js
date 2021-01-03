@@ -34,6 +34,11 @@ class Person {
   ask(){
     console.log(`What's your name, friend?`)
   }
+
+
+  static live(){
+    console.log(`I'm a human, let's LIVE.`);
+  }
 }
 
 
@@ -56,4 +61,7 @@ const genos = new SuperHuman(`Genos`, 19, false, 'fly');
 alex.speak();
 genos.skill();
 
+Person.live();
+SuperHuman.live();
+alex.live(); //error, it's not defined
 
