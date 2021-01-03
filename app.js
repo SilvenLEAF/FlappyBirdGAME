@@ -6,6 +6,7 @@
 
     x(){ this.b }
     y(){ this.c }
+    static z(){ console.log('hi') } //only callable on the Class and not on the instances
   }
 
 
