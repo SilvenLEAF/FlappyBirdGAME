@@ -6,8 +6,8 @@ myArr.prop = 'A';
 console.log(myArr);
 
 /*
-for of -------includes prop
-for in -------excludes prop
+for of -------excludes prop
+for in -------includes prop
 */
 
 for(num of myArr){
