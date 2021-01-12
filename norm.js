@@ -59,3 +59,10 @@ myArr.filter((item, index, arr)=>{
   item < 5;
   console.log({ item, index, arr })
 });
+
+
+
+// Playing with splice( )
+const myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+myArr.splice(7, 1)
+console.log(myArr)
