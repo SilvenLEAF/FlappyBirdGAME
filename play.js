@@ -1,4 +1,5 @@
 // Playing with SET
+// Set is a JavaScript object, I guess array, that holds only unique values
 const mySet1 = new Set(`2323577`);
 const mySet2 = new Set([3,5,6,6,3,4,2,6,5,]);
 
@@ -17,6 +18,7 @@ console.log(mySet2);
 
 
 // Playing with MAP
+// Map is a JavaScript object that can take any data type as its property and value
 const myMap = new Map();
 
 /*
