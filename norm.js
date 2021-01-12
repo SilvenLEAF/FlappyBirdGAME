@@ -63,6 +63,14 @@ myArr.filter((item, index, arr)=>{
 
 
 // Playing with splice( )
+/*
+splice( ) can delete any item in any place in an array.
+pop( ) deletes last item, shift( ) deletes fidst item.
+splice( ) deletes any array item.
+
+splice( index,  1)
+*/
+
 const myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 myArr.splice(7, 1)
 console.log(myArr)
